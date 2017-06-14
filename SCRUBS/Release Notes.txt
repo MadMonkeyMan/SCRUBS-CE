@@ -1,0 +1,16 @@
+v 1.1 Update (jan 16, 2010):
+This is a suggested update for users in the United States, and *required* update for users outside of the United States. Non-US users are advised NOT to download v1.0.
+
+Change Log:
+1. Corrects potential issues when running reports in a non en-US language environment.
+	- Parameters no longer cause error in a non-US SSRS build
+	- Local client date formatting is respected
+
+2. Adds descriptive information to reports. Please note that if SCRUBS is deployed in a SQL SSRS Native mode installation these report descriptions will display by default. Unfortunately, as SharePoint integrated reports do not have this feature, descriptions will not display in the document libray.
+
+
+To upgrade from version 1.0:
+Open the SSRS Report Project in BIDS and redeploy to your SSRS server. Alternatively, you can browse to Report Manager (in Native Mode) or the SharePoint document library you deployed to and manually upload.
+This will overwrite all existing SCRUBS reports.
+
+There are NO changes to the SSIS package or DB Schema.
